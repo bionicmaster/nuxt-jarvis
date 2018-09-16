@@ -1,11 +1,11 @@
 {
-  "name": "nuxt-webpackdashboard",
+  "name": "nuxt-jarvis",
   "version": "1.0.0",
-  "description": "Webpack Dashboard integration for Nuxt",
+  "description": "Webpack Jarvis integration for Nuxt",
   "main": "lib/module.js",
-  "repository": "https://github.com/paulgv/nuxt-webpackdashboard.git",
+  "repository": "https://github.com/bionicmaster/nuxt-jarvis.git",
   "license": "MIT",
   "dependencies": {
-    "webpack-dashboard": "^2.0.0"
+    "webpack-jarvis": "^0.3.2"
   }
 }

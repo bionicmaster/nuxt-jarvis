@@ -1,75 +1,63 @@
-# Webpack Dashboard Module
+# Webpack Jarvis Module
 
-> [Webpack Dashboard](https://github.com/FormidableLabs/webpack-dashboard) integration for [Nuxt](https://github.com/nuxt/nuxt.js)
+> [Jarvis Dashboard](https://github.com/zouhir/jarvis) integration for [Nuxt](https://github.com/nuxt/nuxt.js)
 
 ## Install
 
 Install the package:
 
 ```sh
-yarn add nuxt-webpackdashboard -D
-# or npm i nuxt-webpackdashboard -D
+yarn add nuxt-jarvis -D
+# or npm i nuxt-jarvis -D
 ```
 
 ## Setup
 
-- Add `nuxt-webpackdashboard` to `nuxt.config.js`:
+- Add `nuxt-jarvis` to `nuxt.config.js`:
 
 ```js
 // nuxt.config.js
 
 {
   modules: [
-    'nuxt-webpackdashboard',
-  ],
+    'nuxt-jarvis',
+  ]
 }
 ```
 
-- In `package.json`, modify the dev script to run with webpack-dashboard:
+In your browser open:
 
-```json
-{
-  "scripts": {
-    "dev": "webpack-dashboard -- nuxt",
-  },
-}
 ```
+localhost:1337
+```
+
+and you are all set!
+
 
 ## Options
 
-[CLI options](https://github.com/FormidableLabs/webpack-dashboard#webpack-dashboard-cli) can be added in your `package.json`:
-
-```json
-{
-  "scripts": {
-    "dev": "webpack-dashboard -m -- nuxt",
-  },
-}
-```
-
-
-[Webpack plugin options](https://github.com/FormidableLabs/webpack-dashboard#webpack-plugin) can be passed to Webpack Dashboard in Nuxt config's modules sections:
+[Webpack plugin options](https://github.com/zouhir/jarvis#options) can be passed to Webpack Jarvis in Nuxt config's modules sections:
 
 ```js
 // nuxt.config.js
 
 {
   modules: [
-    ['webpackdashboard-module', {
-      port: 3001,
-    }],
-  ],
+    ['jarvisdashboard-module', {
+      port: 1337
+    }]
+  ]
 }
 ```
 
-Or by adding a `webpackDashboard` key:
+Or by adding a `jarvisDashboard` key:
 
 ```js
 // nuxt.config.js
 
 {
-  webpackDashboard: {
-    port: 3001,
-  },
+  jarvisDashboard: {
+    port: 1337
+  }
 }
 ```
